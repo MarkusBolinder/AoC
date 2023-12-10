@@ -17,7 +17,7 @@ connections = {
 }
 
 start = (-1, -1)
-grid = [[0 for c in range(cols)] for r in range(rows)]
+grid = [[0 for _ in range(cols)] for _ in range(rows)]
 for r in range(rows):
     for c in range(cols):
         pipe = lines[r][c]
@@ -173,7 +173,7 @@ while q:
             q.append(n)
             big_loop.add(n)
 
-# do flood fill at every grid point
+# flood fill
 seen = set()
 q = deque()
 q.append((0, 0)) # (0, 0) is outside the area that is enclosed by the loop (I guess that is not guaranteed, but whatever)
