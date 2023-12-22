@@ -1,6 +1,7 @@
 from collections import deque, defaultdict, Counter
 import heapq
 from math import gcd
+from copy import deepcopy
 
 data = open(0).read().strip()
 lines = data.split("\n")
