@@ -2,8 +2,6 @@ from collections import deque, defaultdict, Counter
 from math import gcd
 from copy import deepcopy
 import sys
-from z3 import *
-import networkx as nx
 
 data = open(0).read().strip()
 lines = data.split("\n")
