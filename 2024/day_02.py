@@ -30,7 +30,6 @@ p2 = 0
 cols = len(grid[0])
 
 for row in grid:
-    cols = len(row)
     for i in range(cols):
         r = [x for j, x in enumerate(row) if j != i]
         if safe(r):
